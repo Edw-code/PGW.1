@@ -1,0 +1,355 @@
+* {
+    /* accion que aplica a todo el texto de la pagina */
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* efcto de desplasamiento de los links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* configuraciones de las letras de la pagina */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-weight: bold;
+
+}
+
+/* tamaños de letras */
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.7em;
+    color: white;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-style: 1.25em;
+    color: white;
+}
+
+/* Formato de botones */
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+    background-color: rgb(0, 213, 0);
+}
+
+/*efecto de opacar boton al pasar el cursor  */
+button:hover {
+    background-color: rgb(0, 95, 0);
+}
+
+/* color de fondo del logo */
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+/* ajustes del logo */
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: 2em;
+}
+
+/* conteiner del logo y link */
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+/* ajuste del link "¿Que es VissaGuat?" */
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* efecto de opacar boton al pasar el cursor del link */
+header a:hover {
+    color: cornflowerblue;
+}
+
+/* Configuracion del titulo1 e imagen */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    /* imagen de fondo de titulo1 */
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("viajar-a-guatemala.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: center center;
+}
+
+/* color de fondo y letra del titulo2  */
+#Titulo2 {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+/* conteiner del titulo2 */
+#Titulo2.container {
+    padding: 150px 12px;
+
+}
+
+/* funcion que no aplica el parrafo de los temas en la version movil  */
+#Titulo2 p {
+    display: none;
+}
+
+/* ubicacion de las cartas  */
+#Titulo2 .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+/* funcion que le aplica la imagen a las cartas de la numero 1 a la numero 12 */
+/* Carta numer 1 */
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Tikal.jpg");
+}
+
+/* Carta numer 2 */
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen2.jpg");
+}
+
+/* Carta numer 3 */
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen3.jpg");
+}
+
+/* Carta numer 4 */
+.carta:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen4.jpg");
+}
+
+/* Carta numer 5 */
+.carta:nth-child(5) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen5.jpg");
+}
+
+/* Carta numer 6 */
+.carta:nth-child(6) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen6.png");
+}
+
+/* Carta numer 7 */
+.carta:nth-child(7) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen7.jpg");
+}
+/* Carta numer 8 */
+.carta:nth-child(8) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen8.jpg");
+}
+
+/* Carta numer 9 */
+.carta:nth-child(9) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen9.jfif");
+}
+
+/* Carta numer 10 */
+.carta:nth-child(10) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen10.jpg");
+}
+
+/* Carta numer 11 */
+.carta:nth-child(11) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen11.jpg");
+}
+
+/* Carta numer 12 */
+.carta:nth-child(12) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagen12.jpg");
+}
+
+/* ajustes de fonde de la seccion ¿Que es VissaGuat? y  su definicion  */
+#DDLINK {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("antgua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: center center;
+}
+
+/* container de "¿Que es VissaGuat?"  */
+#DDLINK .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* ajustes de nav */
+#DDLINK nav {
+    display: flex;
+    text-align: center;
+}
+  
+#DDLINK a{
+    color: white;
+}
+
+/* efecto de cambio de color en el link al pasar el cursor */
+#DDLINK a:hover {
+    color: cornflowerblue;
+}
+
+/*  configuracion de la etiqueta de copyright */
+/* color de fondo */
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+/* ajustes del texto */
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+/* conteiner de la etiqueta de copyright */
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* version de pc */
+@media (min-width: 720px) {
+    /* funcion que acomoda automatico el tamaño */
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+/* ajuste de container en pc */
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* ajuste de la nav en pc */
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* ajuste de las cartas en pc  */
+    #Titulo2 .lugares {
+        display: inline-table;
+        justify-content: center;
+        background-size: center;
+    }
+
+/* desbloqueo de los parrafos en las cartas en pc */
+    #Titulo2 p {
+        display: block;
+    }
+
+    /* tamaño de carta en pc */
+    #Titulo2 .carta {
+        padding: 70px;
+    }
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
